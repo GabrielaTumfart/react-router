@@ -6,7 +6,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ProductsPage from "./pages/ProductsPage";
+import Prodotti from "./pages/Prodotti";
 import DefaultLayout from "./layouts/DefaultLayout";
 
 export default function App() {
@@ -19,9 +19,12 @@ export default function App() {
 
       <BrowserRouter>
       <Routes>
-        <Route Component={DefaultLayout}>
-          <Route index Component={HomePage} />
-          <Route path="/chi-siamo" Component={AboutPage} />
+        <Route element={<DefaultLayout />}>
+
+          <Route index element={<HomePage />} />
+
+          <Route path="/chi-siamo" element={<AboutPage />} />
+
           <Route path="/prodotti" element={<Prodotti />} />
         </Route>
       </Routes>
