@@ -22,6 +22,7 @@ export default function App() {
         <Route Component={DefaultLayout}>
           <Route index Component={HomePage} />
           <Route path="/chi-siamo" Component={AboutPage} />
+          <Route path="/prodotti" element={<Prodotti />} />
         </Route>
       </Routes>
     </BrowserRouter>
