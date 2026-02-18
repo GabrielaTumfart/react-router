@@ -253,6 +253,13 @@ import axios from "axios";
 export default function Prodotti() {
   const [prodotti, setProdotti] = useState([]);
 
+  useEffect(() => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then(res => setProdotti(res.data))
+      .catch(err => console.error(err));
+  }, []);
+
   
   return (
     <div>
