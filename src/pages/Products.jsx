@@ -246,3 +246,17 @@
 
 
 */
+
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+export default function Prodotti() {
+  const [prodotti, setProdotti] = useState([]);
+
+  
+  return (
+    <div>
+      <h1>Prodotti</h1>
+         </div>
+  );
+}
