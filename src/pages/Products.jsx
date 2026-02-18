@@ -264,6 +264,15 @@ export default function Prodotti() {
   return (
     <div>
       <h1>Prodotti</h1>
-         </div>
+
+      <ul> 
+
+        {prodotti.map(p => (
+          <li key={p.id}>{p.title}</li>
+        ))}
+
+        
+      </ul>
+    </div>
   );
 }
