@@ -6,7 +6,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import Products from "./pages/ProductsPage";
+import ProductsPage from "./pages/ProductsPage";
 import DefaultLayout from "./layouts/DefaultLayout";
 
 export default function App() {
