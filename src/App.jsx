@@ -8,7 +8,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import Prodotti from "./pages/Prodotti";
 import DefaultLayout from "./layouts/DefaultLayout";
-import ProdottoDettaglio from './pages/ProdottoDettaglio';
+import ProdottoDettaglio from "./pages/ProdottoDettaglio";
 
 export default function App() {
  
