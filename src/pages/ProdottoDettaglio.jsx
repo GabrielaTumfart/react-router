@@ -20,6 +20,8 @@ export default function ProdottoDettaglio() {
     <div className="container">
         <h1>{prodotto.title}</h1>
         <img src={prodotto.image} alt={prodotto.title} />
+        <p>{prodotto.description}</p>
+        <p><strong>Prezzo:</strong> ${prodotto.price}</p>
         
 
     </div>
