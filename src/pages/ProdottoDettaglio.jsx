@@ -17,7 +17,9 @@ export default function ProdottoDettaglio() {
 
   return (
 
-    <div>
+    <div className="container">
+        <h1>{prodotto.title}</h1>
+        <img src={prodotto.image} alt={prodotto.title} />
         
 
     </div>
