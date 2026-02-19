@@ -6,6 +6,13 @@ export default function ProdottoDettaglio() {
     const { id } = useParams();
     const [prodotto, setProdotto] = useState(null);
 
+    useEffect(() => {
+        axios
+          .get(`https://fakestoreapi.com/products/${id}`)
+          .then(res => setProdotto(res.data))
+          .catch(err => console.error(err));
+      }, [id]);
+
 
 
   return (
