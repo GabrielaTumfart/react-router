@@ -17,6 +17,19 @@ export default function ProdottoDettaglio() {
 
   return (
 
+    <div>
+         <h1>Prodotti di Gabriela</h1>
+
+         <ul>
+            {prodotti.map(p => (
+            ))}
+
+
+         </ul>
+
+
+    </div>
+
 
 
 
