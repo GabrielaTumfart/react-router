@@ -249,6 +249,8 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 
 export default function Prodotti() {
   const [prodotti, setProdotti] = useState([]);
@@ -268,7 +270,8 @@ export default function Prodotti() {
       <ul> 
 
         {prodotti.map(p => (
-          <li key={p.id}>{p.title}</li>
+          <li key={p.id}>
+            <Link to={`/prodotti/${p.id}`}></Link>{p.title}</li>
         ))}
 
         
