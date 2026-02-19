@@ -14,11 +14,12 @@ export default function App() {
  
 
   return (
-    <>
+    
       
-      <h1>React Router Store</h1>
+      
 
       <BrowserRouter>
+      <h1>React Router Store</h1>
       <Routes>
         <Route element={<DefaultLayout />}>
 
@@ -36,7 +37,7 @@ export default function App() {
     </BrowserRouter>
     
        
-    </>
+   
   )
 }
 

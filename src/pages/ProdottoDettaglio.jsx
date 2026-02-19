@@ -14,9 +14,8 @@ export default function ProdottoDettaglio() {
       }, [id]);
 
 
-      if(!prodotto) 
-        return 
-        <h1>Caricando…</h1>;
+      if (!prodotto) return <h1>Caricando…</h1>;
+
 
 
 

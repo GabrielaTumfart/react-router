@@ -271,7 +271,10 @@ export default function Prodotti() {
 
         {prodotti.map(p => (
           <li key={p.id}>
-            <Link to={`/prodotti/${p.id}`}></Link>{p.title}</li>
+            <Link to={`/prodotti/${p.id}`}>{p.title}</Link>
+
+            
+        </li>
         ))}
 
         
