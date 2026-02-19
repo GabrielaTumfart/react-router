@@ -33,6 +33,9 @@ export default function App() {
 
           <Route path="/prodotti/:id" element={<ProdottoDettaglio />} />
 
+          <Route path="*" element={<NotFound />} />
+
+
 
         </Route>
       </Routes>
